@@ -618,7 +618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065745915}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.57, y: 0, z: 0}
+  m_LocalPosition: {x: -2.57, y: -0.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 800829066}
@@ -1015,7 +1015,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484755828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.11, y: 1.5, z: 0}
+  m_LocalPosition: {x: -5.8, y: -0.37, z: 1}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1038,7 +1038,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 2.0742466
+  m_Distance: 0.005
   m_DampingRatio: 0
   m_Frequency: 1
 --- !u!1 &1624618626
@@ -1138,7 +1138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624618626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1100004, y: 2.05, z: 0}
+  m_LocalPosition: {x: -5.8, y: -0.37, z: 2}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1246,8 +1246,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796188006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.13, z: 0}
-  m_LocalScale: {x: 30, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: -4.472, z: 0}
+  m_LocalScale: {x: 30, y: 2.3156, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1412,6 +1412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentBallRb: {fileID: 1484755829}
+  currentBallSj: {fileID: 1484755833}
+  detachDelay: 0.1
 --- !u!4 &2046495540
 Transform:
   m_ObjectHideFlags: 0
