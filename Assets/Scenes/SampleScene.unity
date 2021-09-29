@@ -1015,7 +1015,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484755828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.37, y: 3.27, z: 0}
+  m_LocalPosition: {x: -4.11, y: 1.5, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1038,7 +1038,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 2.4894378
+  m_Distance: 2.0742466
   m_DampingRatio: 0
   m_Frequency: 1
 --- !u!1 &1624618626
@@ -1138,7 +1138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624618626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 2.05, z: 0}
+  m_LocalPosition: {x: -2.1100004, y: 2.05, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1411,6 +1411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3969ca5fb5718764eb64e427c2fc498d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentBallRb: {fileID: 1484755829}
 --- !u!4 &2046495540
 Transform:
   m_ObjectHideFlags: 0
