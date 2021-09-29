@@ -13,6 +13,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MultiTouch_BallHandler.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1yoD4mNNHLKfU4M5RkVuLTGahBm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -59,7 +62,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632908862281</updated>
-      <workItem from="1632908900427" duration="6131000" />
+      <workItem from="1632908900427" duration="7751000" />
+      <workItem from="1632934695505" duration="1128000" />
     </task>
     <servers />
   </component>
