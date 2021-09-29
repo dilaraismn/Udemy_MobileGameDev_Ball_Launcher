@@ -5,15 +5,20 @@ using UnityEngine.InputSystem;
 
 public class BallHandler : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D currentBallRb;
-    [SerializeField] private SpringJoint2D currentBallSj;
     [SerializeField] private float detachDelay;
+    [SerializeField] private GameObject ballPrefab;
+    [SerializeField] private Rigidbody2D pivot;
+    [SerializeField] private float respawnDelay;
 
+    private Rigidbody2D currentBallRb;
+    private SpringJoint2D currentBallSj;
     private Camera mainCamera; //to convert to world space 
     private bool isDraggin;
+    
     void Start()
     {
         mainCamera = Camera.main;
+        SpawnNewBall();
     }
 
     void Update()
@@ -56,5 +61,17 @@ public class BallHandler : MonoBehaviour
     {
         currentBallSj.enabled = false;
         currentBallSj = null;
+        
+        Invoke(nameof(SpawnNewBall), respawnDelay); //to respawn new balls every time we detach balls after delay
+    }
+
+    private void SpawnNewBall()
+    {
+        GameObject ballInstance = Instantiate(ballPrefab, pivot.position, Quaternion.identity);
+
+        currentBallRb = ballInstance.GetComponent<Rigidbody2D>();
+        currentBallSj = ballInstance.GetComponent<SpringJoint2D>();
+
+        currentBallSj.connectedBody = pivot; //we did it manually before - to attach the ball to the pivot
     }
 }
